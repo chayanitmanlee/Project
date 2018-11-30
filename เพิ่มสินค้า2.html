@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>รายการเพิ่มสินค้า | ระบบคงคลังสินค้าถุงธารน้ำใจ จ.ยะลา</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red  w3-top w3-large" style="z-index:2;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <div class="w3-container w3-display-topleft w3-margin-64 ">
+    <img src="img/logo.png" width="20%" class="w3-display-left" style="margin-left:20px">
+    <h3 class="w3-padding-32"  style="margin-left:70px"><b>ระบบคงคลังสินค้า<br>ถุงธารน้ำใจ จ.ยะลา</b></h3>
+  </div>
+  <div class="w3-bar-block w3-display-middle">
+    <hr style="width:100px;border:5px solid black" class="w3-round">
+    <a href="home.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">หน้าแรก</a> 
+    <a href="ข้อมูลสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">ข้อมูลสินค้า</a> 
+    <a href="เพิ่มสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">เพิ่มสินค้า</a> 
+    <a href="เบิกสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">เบิกสินค้า</a> 
+    <a href="รายงาน.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">รายงาน</a>
+  </div>
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="main">
+  <div class="dropdown w3-round">
+    <button onclick="myFunction()" class="dropbtn">User</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="#แก้ไขข้อมูลส่วนตัว">Link 1</a>
+      <a href="#ออกจากระบบ">Link 2</a>
+    </div>
+  </div><br>
+  <h1><i class='fa fa-plus' ></i> รายการเพิ่มสินค้า</h1>
+  <form action="/action_page.php">
+    <div class="w3-row-padding" >
+      <div class="w3-half" >
+        <p><label><i class="fa fa-calendar-check-o"></i> วันที่เพิ่มสินค้า</label></p>
+        <input type="date" name="bday">
+      </div>
+    </div>
+    <div class="w3-row-padding" >
+      <div class="w3-half">
+        <p><label><i class="fa fa-calendar-check-o"></i> ชื่อสินค้า</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="กรอกชื่อสินค้า" required name="ชื่อสินค้า">
+      </div>
+      <div class="w3-half">
+        <p><label><i class="fa fa-calendar-check-o"></i> รหัสสินค้า</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="รหัสสินค้า" required name="รหัสสินค้า">
+      </div>
+      <div class="w3-half">
+        <p><label><i class="fa fa-calendar-check-o"></i> วันที่ผลิตสินค้า</label></p>
+        <input type="date" name="bday">
+      </div>
+      <div class="w3-half">
+        <p><label><i class="fa fa-calendar-check-o"></i> วันที่หมดอายุ</label></p>
+        <input type="date" name="bday">
+      </div>
+      <div class="w3-half">
+        <p><label><i class="fa fa-calendar-check-o"></i> จำนวนรับเข้า</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="จำนวน" required name="จำนวน">
+      </div>
+      <div class="w3-half ">
+        <p><label><i class="fa fa-calendar-check-o"></i> หน่วย</label></p>
+        <select id="country" name="หน่วย">
+          <option value="australia">ซอง</option>
+          <option value="canada">กระป๋อง</option>
+          <option value="usa">กระปุก</option>
+          <option value="australia">ถุง</option>
+          <option value="canada">ขวด</option>
+          <option value="usa">กล่อง</option>
+          <option value="australia">อัน</option>
+          <option value="canada">ชุด</option>
+          <option value="usa">ใบ</option>
+          <option value="australia">หลอด</option>
+        </select>
+      </div>
+    </div>
+      <div class="w3-container">
+        <p><label><i class="fa fa-calendar-check-o"></i>ชื่อผู้เพิ่มสินค้า</label></p>
+        <select id="country" name="ชื่อผู้เพิ่ม">
+          <option value="australia">chayanit</option>
+          <option value="canada">Natsuda</option>
+          <option value="usa">apple</option>
+        </select>
+      </div>
+      <div class="w3-section w3-right">
+        <button class="w3-button w3-black" type="submit"><i class="fa fa-paper-plane"></i> Save</button>
+        <button class="w3-button w3-black" type="cancle"><i class="fa fa-paper-plane"></i> Cancle</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+
+</body>
+</html>

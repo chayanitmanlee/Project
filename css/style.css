@@ -1,0 +1,207 @@
+body,h1,h2,h3,h4,h5 {font-family: "Trirong", sans-serif}
+body {font-size:16px;}
+.main {
+  float:center;
+  margin-left: 320px;
+  margin-right: 20px;
+   /* Same as the width of the sidebar */
+  padding: 10px ;
+}
+/* The dropdown container */
+.dropdown {
+  float: right;;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 50px;
+  background-color: #F44336;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #F44336;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.w3-half img{margin-bottom:-2px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+select{
+  height:42px;
+  width:200px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 4px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+/* Pagination links */
+.pagination a {
+  color: black;
+  float: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+
+}
+
+/* Style the active/current link */
+.pagination a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Add a grey background color on mouse-over */
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #F44336;
+  color: white;
+  cursor: pointer;
+  padding: 4px;
+  width: 220px;
+  text-align:left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #F44336;
+  color: black;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 4 4px;
+  background-color: #F44336;
+  display: none;
+  overflow: hidden;
+}
+
+button:hover {
+  opacity:1;
+}
+.signupbtn {
+  padding: 20px 80px;
+  background-color: green;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 20px 80px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: center;
+  width: 250px;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  left: 0;
+  top: 0;
+  width: 50%; /* Full width */
+  height: 50%; /* Full height */
+  margin-top:20px;
+  margin-left:520px;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: whitesmoke;
+  padding: 60px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f44336;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+.btn {
+  background-color:black;
+  border: none;
+  color: white;
+  padding: 4px 12px;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: black;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>รายงาน | ระบบสินค้าคงคลังถุงธารน้ำใจ จ.ยะลา</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-red  w3-top w3-large" style="z-index:2;width:300px;font-weight:bold;" id="mySidebar"><br>
+    <div class="w3-container w3-display-topleft w3-margin-64 ">
+      <img src="img/logo2.png" width="23%" height="35%" class="w3-display-left" style="margin-left:16px">
+      <h3 class="w3-padding-32" style="margin-left:70px"><b>ระบบคงคลังสินค้า<br>ถุงธารน้ำใจ จ.ยะลา</b></h3>
+    </div>
+    <div class="w3-bar-block w3-display-middle">
+      <hr style="width:200px;border:5px solid black" class="w3-round">
+      <a href="home.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">หน้าแรก</a>
+      <button class="accordion" style="margin-left:10px;">รายการสินค้า</button>
+      <div class="panel">
+        <a href="ข้อมูลสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"> -
+          รายการสินค้าทั้งหมด</a>
+        <a href="รายการเพิ่มสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"> -
+          รายการเพิ่มสินค้า</a>
+        <a href="รายการเบิกสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"> -
+          รายการเบิกสินค้า</a>
+      </div>
+      <a href="เพิ่มสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">เพิ่มสินค้า</a>
+      <a href="เบิกสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">เบิกสินค้า</a>
+      <a href="รายงาน.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">รายงาน</a>
+    </div>
+  </nav>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="main">
+    <div class="dropdown w3-round">
+      <button onclick="myFunction()" class="dropbtn"><i class="fa fa-user"></i> ผู้ใช้งาน</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="แก้ไขข้อมูลผู้ใช้งาน.html">แก้ไขข้อมูลผู้ใช้งาน</a>
+        <a href="loginnew.html">ออกจากระบบ</a>
+      </div>
+    </div>
+    <hr style="margin-top:60px;width:1000px;border:2px solid #C5D6CE" class="w3-round">
+    <h1><i class='fa fa-print'></i> รายงาน</h1>
+    <form action="/action_page.php">
+      <div class="w3-row">
+        <div class="w3-quarter">
+          <p><label><i class="fa fa-calendar-check-o"></i> หมวดหมู่</label></p>
+          <select id="country" name="หน่วย">
+            <option value="australia">เลือกรายการสินค้า</option>
+            <option value="australia">ข้อมูลสินค้า</option>
+            <option value="canada">เพิ่มสินค้า</option>
+            <option value="usa">เบิกสินค้า</option>
+          </select>
+        </div>
+        <div class="w3-quarter">
+          <p><label><i class="fa fa-calendar-check-o"></i>เลือกเดือน</label></p>
+          <select class="magic">
+            <option value="">--เลือกเดือน--</option>
+            <option value="01">มกราคม</option>
+            <option value="02">กุมภาพันธ์</option>
+            <option value="03">มีนาคม</option>
+            <option value="04">เมษายน</option>
+            <option value="05">พฤษภาคม</option>
+            <option value="06">มิถุนายน</option>
+            <option value="07">กรกฎาคม</option>
+            <option value="08">สิงหาคม</option>
+            <option value="09">กันยายน</option>
+            <option value="10">ตุลาคม</option>
+            <option value="11">พฤศจิกายน</option>
+            <option value="12">ธันวาคม</option>
+          </select>
+        </div>
+        <div class="w3-quarter">
+          <p><label><i class="fa fa-calendar-check-o"></i>เลือกปี</label></p>
+          <input class="w3-input w3-border" type="text" placeholder="กรอกปี" required name="ปี">
+        </div>
+        <div class="w3-quarter" style="margin-top:65px;">
+          <i><a href="" button class="btn" style="text-decoration:none;margin-left:20px;"> <i class="fa fa-search "></i>
+              ค้นหา</button> </i></a>
+        </div>
+        <br> <br> <br> <br> <br>
+        <table id="printTable">
+          <tr>
+            <th>ลำดับ</th>
+            <th>รหัสสินค้า</th>
+            <th>ชื่อสินค้า</th>
+            <th>จำนวน</th>
+            <th>หน่วย</th>
+            <th>วันที่ผลิตสินค้า</th>
+            <th>วันหมดอายุ</th>
+            <th>วันที่เพิ่มสินค้า</th>
+            <th>วันที่เบิกสินค้า</th>
+            <th>จำนวนคงเหลือ</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>001</td>
+            <td>ปลากระป๋อง</td>
+            <td>10</td>
+            <td>กระป๋อง</td>
+            <td>10/01/2017</td>
+            <td>10/01/2019</td>
+            <td>14/11/2018</td>
+            <td>25/11/2018</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>002</td>
+            <td>มาม่า</td>
+            <td>15</td>
+            <td>ซอง</td>
+            <td>12/01/2017</td>
+            <td>14/01/2019</td>
+            <td>12/11/2018</td>
+            <td>20/11/2018</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>003</td>
+            <td>ไข่พะโล้ใส่ไก่</td>
+            <td>50</td>
+            <td>กระป๋อง</td>
+            <td>12/01/2017</td>
+            <td>14/01/2019</td>
+            <td>12/11/2018</td>
+            <td>20/11/2018</td>
+            <td>50</td>
+          </tr>
+        </table>
+        <div class="w3-section w3-right">
+          <button onclick="printData()" class="w3-button w3-black" type=""><i class="fa fa-print"></i> พิมพ์</button>
+        </div>
+</body>
+<script src="javascript/print.js"></script>
+
+</html>

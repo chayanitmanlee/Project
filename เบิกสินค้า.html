@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>เบิกสินค้า | ระบบสินค้าคงคลังถุงธารน้ำใจ จ.ยะลา</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-red  w3-top w3-large" style="z-index:2;width:300px;font-weight:bold;" id="mySidebar"><br>
+    <div class="w3-container w3-display-topleft w3-margin-64 ">
+      <img src="img/logo2.png" width="23%" height="35%" class="w3-display-left" style="margin-left:16px">
+      <h3 class="w3-padding-32" style="margin-left:70px"><b>ระบบคงคลังสินค้า<br>ถุงธารน้ำใจ จ.ยะลา</b></h3>
+    </div>
+    <div class="w3-bar-block w3-display-middle">
+      <hr style="width:200px;border:5px solid black" class="w3-round">
+      <a href="home.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">หน้าแรก</a>
+      <button class="accordion" style="margin-left:10px;">รายการสินค้า</button>
+      <div class="panel">
+        <a href="ข้อมูลสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"> -
+          รายการสินค้าทั้งหมด</a>
+        <a href="รายการเพิ่มสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"> -
+          รายการเพิ่มสินค้าทั้งหมด</a>
+        <a href="รายการเบิกสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"> -
+          รายการเบิกสินค้าทั้งหมด</a>
+      </div>
+      <a href="เพิ่มสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">เพิ่มสินค้า</a>
+      <a href="เบิกสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">เบิกสินค้า</a>
+      <a href="รายงาน.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">รายงาน</a>
+    </div>
+  </nav>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="main">
+    <div class="dropdown w3-round">
+      <button onclick="myFunction()" class="dropbtn"><i class="fa fa-user"></i> ผู้ใช้งาน</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="แก้ไขข้อมูลผู้ใช้งาน.html">แก้ไขข้อมูลผู้ใช้งาน</a>
+        <a href="loginnew.html">ออกจากระบบ</a>
+      </div>
+    </div>
+    <hr style="margin-top:60px;width:1000px;border:2px solid #C5D6CE" class="w3-round">
+    <h1><i class='fa fa-plus'></i> รายการเพิ่มสินค้า</h1>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-row-padding">
+        <div class="w3-half ">
+          <p><label><i class="fa fa-calendar-check-o"></i> ชื่อ</label></p>
+          <select id="country" name="หน่วย">
+            <option value="australia">ปลากระป๋อง</option>
+            <option value="australia">ข้าวสาร</option>
+            <option value="canada">น้ำพริก</option>
+            <option value="usa">เทียนไข</option>
+            <option value="australia">ผักกาดกอง</option>
+            <option value="canada">เกลือ</option>
+            <option value="usa">น้ำดื่ม</option>
+          </select>
+          <i><a href="" button class="btn" style="text-decoration:none;"> <i class="fa fa-search "></i> ค้นหา</button>
+          </i></a>
+        </div><br><br>
+        <table class="sortable">
+          <tr>
+            <th>เลือก</th>
+            <th>ลำดับ</th>
+            <th>รหัสสินค้า</th>
+            <th>ชื่อสินค้า</th>
+            <th>จำนวน</th>
+            <th>หน่วย</th>
+            <th>วันที่หมดอายุ</th>
+            <th>วันที่เพิ่มสินค้า</th>
+            <th>วันที่หมดอายุ</th>
+            <th>จำนวนคงเหลือ</th>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" name="myTextEditBox" value="checked" />
+            </td>
+            <td>1</td>
+            <td>001</td>
+            <td>มาม่า</td>
+            <td>3</td>
+            <td>ห่อ</td>
+            <td>12-02-2561</td>
+            <td>12-02-2561</td>
+            <td>12-02-2561</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" name="myTextEditBox" value="checked" />
+            </td>
+            <td>1</td>
+            <td>001</td>
+            <td>มาม่า</td>
+            <td>3</td>
+            <td>ห่อ</td>
+            <td>12-02-2561</td>
+            <td>12-02-2561</td>
+            <td>12-02-2561</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" name="myTextEditBox" value="checked" />
+            </td>
+            <td>1</td>
+            <td>001</td>
+            <td>มาม่า</td>
+            <td>3</td>
+            <td>ห่อ</td>
+            <td>12-02-2561</td>
+            <td>12-02-2561</td>
+            <td>12-02-2561</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" name="myTextEditBox" value="checked" />
+            </td>
+            <td>1</td>
+            <td>001</td>
+            <td>มาม่า</td>
+            <td>3</td>
+            <td>ห่อ</td>
+            <td>12-02-2561</td>
+            <td>12-02-2561</td>
+            <td>12-02-2561</td>
+            <td>1</td>
+          </tr>
+        </table>
+      </div>
+    </form>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-row-padding">
+        <div class="w3-section w3-right">
+          <button class="w3-button w3-black" type="submit"><i class="fa fa-check"></i> บันทึก</button>
+        </div><br>
+        <h1><i class='fa fa-minus'></i> เบิกสินค้า</h1>
+        <table>
+          <tr>
+            <th>ลำดับ</th>
+            <th>รหัสสินค้า</th>
+            <th>ชื่อสินค้า</th>
+            <th>จำนวน</th>
+            <th>หน่วย</th>
+            <th>วันที่หมดอายุ</th>
+            <th>วันที่เพิ่มสินค้า</th>
+            <th>วันที่หมดอายุ</th>
+            <th>จำนวนคงเหลือ</th>
+            <th>จำนวน</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>001</td>
+            <td>มาม่า</td>
+            <td>3</td>
+            <td>ห่อ</td>
+            <td>12-02-2561</td>
+            <td>12-02-2561</td>
+            <td>12-02-2561</td>
+            <td>1</td>
+            <td>
+              <input class="w3-input w3-border" style="width:40px;height:25px;margin-left:10px;" type="text">
+            </td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>001</td>
+            <td>มาม่า</td>
+            <td>3</td>
+            <td>ห่อ</td>
+            <td>12-02-2561</td>
+            <td>12-02-2561</td>
+            <td>12-02-2561</td>
+            <td>1</td>
+            <td>
+              <input class="w3-input w3-border" style="width:40px;height:25px;margin-left:10px;" type="text">
+            </td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>001</td>
+            <td>มาม่า</td>
+            <td>3</td>
+            <td>ห่อ</td>
+            <td>12-02-2561</td>
+            <td>12-02-2561</td>
+            <td>12-02-2561</td>
+            <td>1</td>
+            <td>
+              <input class="w3-input w3-border" style="width:40px;height:25px;margin-left:10px;" type="text">
+            </td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>001</td>
+            <td>มาม่า</td>
+            <td>3</td>
+            <td>ห่อ</td>
+            <td>12-02-2561</td>
+            <td>12-02-2561</td>
+            <td>12-02-2561</td>
+            <td>1</td>
+            <td>
+              <input class="w3-input w3-border" style="width:40px;height:25px;margin-left:10px;" type="text">
+            </td>
+          </tr>
+        </table><br>
+        <div class="input-container w3-right">
+          <input class="input-field" type="text" placeholder="รวม" name="usrnm">
+        </div>
+        <div class="w3-row-padding">
+          <div class="w3-half">
+            <p><label><i class="fa fa-calendar-check-o"></i> วันที่เบิกสินค้า</label></p>
+            <input class="w3-input w3-border" type="date" placeholder="DD MM YYYY" name="CheckIn" required>
+          </div>
+          <div class="w3-half">
+            <p><label><i class="fa fa-calendar-check-o"></i>ชื่อผู้เบิกสินค้า</label></p>
+            <select id="select" name="ชื่อผู้เพิ่ม">
+              <option value="australia">chayanit</option>
+              <option value="canada">Natsuda</option>
+              <option value="usa">apple</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="w3-section w3-right">
+          <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="w3-button w3-black"
+            type="submit"><i class="fa fa-paper-plane"></i> บันทึก</button>
+          <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <form class="modal-content" action="/action_page.php">
+              <div class="container">
+                <h1 style="text-align: center;">ยืนการบันทึก</h1>
+                <div class="clearfix">
+                  <button type="submit" class="signupbtn">Sign Up</button>
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <button class="w3-button w3-black" type="cancle"><i class="fa fa-paper-plane"></i> ยกเลิก</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <script src="javascript/javascriptaccordion.js"></script>
+  <script src="javascript/sort.js"></script>
+</body>
+
+</html>
