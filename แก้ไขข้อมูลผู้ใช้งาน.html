@@ -81,8 +81,21 @@
         <input class="w3-input w3-border" type="text" placeholder="กรอกอีเมล" required name="E-mail">
       </div>
       <div class="w3-section w3-right">
-        <button class="w3-button w3-black" type="submit"><i class="fa fa-paper-plane"></i> Save</button>
-        <button class="w3-button w3-black" type="cancle"><i class="fa fa-paper-plane"></i> Cancle</button>
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="w3-button w3-black"
+          type="submit"><i class="fa fa-paper-plane"></i> บันทึก</button>
+        <div id="id01" class="modal">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <form class="modal-content" action="/action_page.php">
+            <div class="container">
+              <h1 style="text-align: center;">ยืนการบันทึก</h1>
+              <div class="clearfix">
+                <button type="submit" class="signupbtn">Sign Up</button>
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <button class="w3-button w3-black" type="cancle"><i class="fa fa-paper-plane"></i> ยกเลิก</button>
       </div>
     </div>
   </form>
