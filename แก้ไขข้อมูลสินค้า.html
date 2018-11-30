@@ -31,12 +31,13 @@
 <!-- !PAGE CONTENT! -->
 <div class="main">
   <div class="dropdown w3-round">
-    <button onclick="myFunction()" class="dropbtn"><i class="fa fa-user"></i> User</button>
+    <button onclick="myFunction()" class="dropbtn"><i class="fa fa-user"></i> ผู้ใช้งาน</button>
     <div id="myDropdown" class="dropdown-content">
-      <a href="#แก้ไขข้อมูลผู้ใช้งาน">แก้ไขข้อมูลผู้ใช้งาน</a>
-      <a href="#ออกจากระบบ">ออกจากระบบ</a>
+      <a href="แก้ไขข้อมูลผู้ใช้งาน.html">แก้ไขข้อมูลผู้ใช้งาน</a>
+      <a href="loginnew.html">ออกจากระบบ</a>  
     </div>
   </div>
+  <hr style="margin-top:60px;width:1000px;border:2px solid #C5D6CE" class="w3-round">
   <h1>แก้ไขข้อมูลสินค้า</h1>
   <form action="/action_page.php">
     <div class="w3-row-padding" >
@@ -80,19 +81,20 @@
       </div>
     </div>
     <div class="w3-section w3-right">
-      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"class="w3-button w3-black" type="submit"><i class="fa fa-paper-plane"></i> บันทึก</button>
-        <div id="id01" class="modal">
-          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-            <form class="modal-content" action="/action_page.php">
-              <div class="container">
-                <h1 style="text-align: center;">ยืนการบันทึก</h1>
-                <div class="clearfix">
-                  <button type="submit" class="signupbtn">Sign Up</button>
-                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                </div>
-              </div>
-            </form>
-        </div>
+      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="w3-button w3-black"
+        type="submit"><i class="fa fa-paper-plane"></i> บันทึก</button>
+      <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content" action="/action_page.php">
+          <div class="container">
+            <h1 style="text-align: center;">ยืนการบันทึก</h1>
+            <div class="clearfix">
+              <button type="submit" class="signupbtn">Sign Up</button>
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            </div>
+          </div>
+        </form>
+      </div>
       <button class="w3-button w3-black" type="cancle"><i class="fa fa-paper-plane"></i> ยกเลิก</button>
     </div>
   </form>
