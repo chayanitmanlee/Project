@@ -1,5 +1,8 @@
 body,h1,h2,h3,h4,h5 {font-family: "Trirong", sans-serif}
 body {font-size:16px;}
+.sidebar {
+  height:900px;
+}
 .main {
   float:center;
   margin-left: 320px;
