@@ -13,20 +13,20 @@
 <nav class="w3-sidebar w3-red  w3-top w3-large" style="z-index:2;width:300px;font-weight:bold;" id="mySidebar"><br>
   <div class="w3-container w3-display-topleft w3-margin-64 ">
     <img src="img/logo2.png" width="23%" height="35%" class="w3-display-left" style="margin-left:16px">
-    <h3 class="w3-padding-32"  style="margin-left:70px"><b>ระบบคงคลังสินค้า<br>ถุงธารน้ำใจ จ.ยะลา</b></h3>
+    <h3 class="w3-padding-32" style="margin-left:70px"><b>ระบบคงคลังสินค้า<br>ถุงธารน้ำใจ จ.ยะลา</b></h3>
   </div>
   <div class="w3-bar-block w3-display-middle">
     <hr style="width:200px;border:5px solid black" class="w3-round">
-    <a href="home.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">หน้าแรก</a> 
-    <button class="accordion" style="margin-left:10px;">รายการสินค้า</button>
-      <div class="panel">
-        <a href="ข้อมูลสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"> - รายการสินค้าทั้งหมด</a> 
-        <a href="รายการเพิ่มสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"> - รายการเพิ่มสินค้าทั้งหมด</a> 
-        <a href="รายการเบิกสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"> - รายการเบิกสินค้าทั้งหมด</a> 
-      </div>
-    <a href="เพิ่มสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">เพิ่มสินค้า</a> 
-    <a href="เบิกสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">เบิกสินค้า</a> 
-    <a href="รายงาน.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">รายงาน</a>
+    <a href="home.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">หน้าแรก</a>
+    <a href="เพิ่มสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">เพิ่มสินค้า</a>
+    <a href="เบิกสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">เบิกสินค้า</a>
+    <button class="accordion" style="margin-left:10px;">รายงานสินค้า</button>
+    <div class="panel">
+      <a href="ข้อมูลสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"> - รายงานสินค้า</a>
+      <a href="รายการเพิ่มสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"> - รายงานเพิ่มสินค้า</a>
+      <a href="รายการเบิกสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"> - รายงานเบิกสินค้า</a>
+    </div>
+    <a href="loginnew.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">ออกจากระบบ</a>
   </div>
 </nav>
 <!-- !PAGE CONTENT! -->
@@ -45,29 +45,27 @@
       <div class="w3-half" >
         <p><label><i class="fa fa-calendar-check-o"></i>ID User (รหัสผู้ใช้) : 001</label></p>
       </div>
-    </div>
-    <div class="w3-row-padding" >
       <div class="w3-half">
         <p><label><i class="fa fa-calendar-check-o"></i>Username (ชื่อผู้ใช้) : Chayanit </label></p>
       </div>
-      <div class="w3-row-padding">
+    <div class="w3-row-padding">
+      <div class="w3-half">
         <p><label><i class="fa fa-calendar-check-o"></i>Password</label></p>
         <input class="w3-input w3-border" type="text" placeholder="กรอกรหัสผ่าน" required name="รหัสผ่าน">
       </div>
-      
-      <div class="w3-row-padding">
+      <div class="w3-half">
         <p><label><i class="fa fa-calendar-check-o"></i>Confirm Password</label></p>
         <input class="w3-input w3-border" type="text" placeholder="ยืนยันรหัสผ่าน" name="Confirm Password" required>
       </div>
-      <div class="w3-row-padding">
+      <div class="w3-half">
         <p><label><i class="fa fa-calendar-check-o"></i>Name</label></p>
         <input class="w3-input w3-border" type="text" placeholder="กรอกชื่อ" name="ชื่อ" required>
       </div>
-      <div class="w3-row-padding">
+      <div class="w3-half">
         <p><label><i class="fa fa-calendar-check-o"></i>Username</label></p>
         <input class="w3-input w3-border" type="text" placeholder="กรอกนามสกุล" required name="นามสกุล">
       </div>
-      <div class="w3-row-padding ">
+      <div class="w3-quarter">
         <p><label><i class="fa fa-calendar-check-o"></i>Position</label></p>
         <select id="country" name="หน่วย">
           <option value="australia">กรอกตำแหน่ง</option>
@@ -75,11 +73,11 @@
           <option value="usa">ผู้เบิกสินค้า</option>
         </select>
       </div>
-    </div>
-      <div class="w3-container">
+      <div class="w3-quarter">
         <p><label><i class="fa fa-calendar-check-o"></i> E-mail</label></p>
         <input class="w3-input w3-border" type="text" placeholder="กรอกอีเมล" required name="E-mail">
       </div>
+    </div>
       <div class="w3-section w3-right">
         <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="w3-button w3-black"
           type="submit"><i class="fa fa-paper-plane"></i> บันทึก</button>

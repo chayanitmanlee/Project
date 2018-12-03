@@ -7,70 +7,69 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<body>
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-red  w3-top w3-large" style="z-index:2;width:300px;font-weight:bold;" id="mySidebar"><br>
-  <div class="w3-container w3-display-topleft w3-margin-64 ">
-    <img src="img/logo2.png" width="23%" height="35%" class="w3-display-left" style="margin-left:16px">
-    <h3 class="w3-padding-32"  style="margin-left:70px"><b>ระบบคงคลังสินค้า<br>ถุงธารน้ำใจ จ.ยะลา</b></h3>
-  </div>
-  <div class="w3-bar-block w3-display-middle">
-    <hr style="width:200px;border:5px solid black" class="w3-round">
-    <a href="home.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">หน้าแรก</a> 
-    <button class="accordion" style="margin-left:10px;">รายการสินค้า</button>
-      <div class="panel">
-        <a href="ข้อมูลสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"> - รายการสินค้าทั้งหมด</a> 
-        <a href="รายการเพิ่มสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"> - รายการเพิ่มสินค้าทั้งหมด</a> 
-        <a href="รายการเบิกสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"> - รายการเบิกสินค้าทั้งหมด</a> 
-      </div>
-    <a href="เพิ่มสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">เพิ่มสินค้า</a> 
-    <a href="เบิกสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">เบิกสินค้า</a> 
-    <a href="รายงาน.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">รายงาน</a>
-  </div>
-</nav>
 
-<!-- !PAGE CONTENT! -->
-<div class="main">
-  <div class="dropdown w3-round">
-    <button onclick="myFunction()" class="dropbtn"><i class="fa fa-user"></i> ผู้ใช้งาน</button>
-    <div id="myDropdown" class="dropdown-content">
-      <a href="แก้ไขข้อมูลผู้ใช้งาน.html">แก้ไขข้อมูลผู้ใช้งาน</a>
-      <a href="loginnew.html">ออกจากระบบ</a>
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-red  w3-top w3-large" style="z-index:2;width:300px;font-weight:bold;" id="mySidebar"><br>
+    <div class="w3-container w3-display-topleft w3-margin-64 ">
+      <img src="img/logo2.png" width="23%" height="35%" class="w3-display-left" style="margin-left:16px">
+      <h3 class="w3-padding-32" style="margin-left:70px"><b>ระบบคงคลังสินค้า<br>ถุงธารน้ำใจ จ.ยะลา</b></h3>
     </div>
-  </div>
-  <hr style="margin-top:60px;width:1000px;border:2px solid #C5D6CE" class="w3-round">
-  <h1><i class='fa fa-plus' ></i> เพิ่มสินค้า</h1>
-  <form action="/action_page.php">
-    <div class="w3-row-padding" >
-      <div class="w3-half" >
-        <p><label><i class="fa fa-calendar-check-o"></i> วันที่เพิ่มสินค้า</label></p>
-        <input class="w3-input w3-border" type="date" placeholder="DD MM YYYY" name="CheckIn" required>
+    <div class="w3-bar-block w3-display-middle">
+      <hr style="width:200px;border:5px solid black" class="w3-round">
+      <a href="home.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">หน้าแรก</a>
+      <a href="เพิ่มสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">เพิ่มสินค้า</a>
+      <a href="เบิกสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">เบิกสินค้า</a>
+      <button class="accordion" style="margin-left:10px;">รายงานสินค้า</button>
+      <div class="panel">
+        <a href="ข้อมูลสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"> - รายงานสินค้า</a>
+        <a href="รายการเพิ่มสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"> - รายงานเพิ่มสินค้า</a>
+        <a href="รายการเบิกสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"> - รายงานเบิกสินค้า</a>
+      </div>
+      <a href="loginnew.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">ออกจากระบบ</a>
+    </div>
+  </nav>
+  <!-- !PAGE CONTENT! -->
+  <div class="main">
+    <div class="dropdown w3-round">
+      <button onclick="myFunction()" class="dropbtn"><i class="fa fa-user"></i> ผู้ใช้งาน</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="แก้ไขข้อมูลผู้ใช้งาน.html">แก้ไขข้อมูลผู้ใช้งาน</a>
+        <a href="loginnew.html">ออกจากระบบ</a>
       </div>
     </div>
-    <div class="w3-row-padding" >
-      <div class="w3-half">
-        <p><label><i class="fa fa-calendar-check-o"></i> ชื่อสินค้า</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="ชื่อสินค้า" required name="ชื่อสินค้า">
-      </div>
-      <div class="w3-half">
-        <p><label><i class="fa fa-calendar-check-o"></i> รหัสสินค้า</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="รหัสสินค้า" required name="รหัสสินค้า">
-      </div>
-      <div class="w3-half">
-        <p><label><i class="fa fa-calendar-check-o"></i> วันที่ผลิตสินค้า</label></p>
-        <input class="w3-input w3-border" type="date" placeholder="DD MM YYYY" name="CheckIn" required>
-      </div>
-      <div class="w3-half">
-        <p><label><i class="fa fa-calendar-check-o"></i> วันที่หมดอายุ</label></p>
-        <input class="w3-input w3-border" type="date" placeholder="DD MM YYYY" name="CheckIn" required>
-      </div>
-      <div class="w3-half">
-        <p><label><i class="fa fa-calendar-check-o"></i> จำนวน</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="จำนวน" required name="จำนวน">
-      </div>
-      <div class="w3-half ">
-        <p><label><i class="fa fa-calendar-check-o"></i> หน่วย</label></p>
-        <select id="country" name="หน่วย">
+    <hr style="margin-top:60px;width:1000px;border:2px solid #C5D6CE" class="w3-round">
+    <h1><i class='fa fa-plus'></i> เพิ่มสินค้า</h1>
+    <form action="/action_page.php">
+      <div class="w3-row-padding">
+        <div class="w3-half">
+          <p><label><i class="fa fa-calendar-check-o"></i> เลขที่เพิ่มสินค้า : 000xx</label></p>
+        </div>
+        <div class="w3-half">
+          <p><label><i class="fa fa-calendar-check-o"></i> วันที่เพิ่มสินค้า : 04/12/61</label></p>
+        </div>
+        <div class="w3-half">
+          <p><label><i class="fa fa-calendar-check-o"></i> ชื่อสินค้า</label></p>
+          <input class="w3-input w3-border" type="text" placeholder="ชื่อสินค้า" required name="ชื่อสินค้า">
+        </div>
+        <div class="w3-half">
+          <p><label><i class="fa fa-calendar-check-o" style="margin-top:50px;"></i> รหัสสินค้า : 00xx</label></p>
+        </div>
+        <div class="w3-half">
+          <p><label><i class="fa fa-calendar-check-o"></i> วันที่ผลิตสินค้า</label></p>
+          <input class="w3-input w3-border" type="date" placeholder="DD MM YYYY" name="CheckIn" required>
+        </div>
+        <div class="w3-half">
+          <p><label><i class="fa fa-calendar-check-o"></i> วันที่หมดอายุ</label></p>
+          <input class="w3-input w3-border" type="date" placeholder="DD MM YYYY" name="CheckIn" required>
+        </div>
+        <div class="w3-quarter">
+          <p><label><i class="fa fa-calendar-check-o"></i> จำนวน</label></p>
+          <input class="w3-input w3-border" type="text" placeholder="จำนวน" required name="จำนวน">
+        </div>
+        <div class="w3-quarter">
+          <p><label><i class="fa fa-calendar-check-o"></i> หน่วย</label></p>
+          <select id="country" name="หน่วย">
             <option value="australia">เลือกหน่วย</option>
             <option value="australia">ซอง</option>
             <option value="canada">กระป๋อง</option>
@@ -83,42 +82,95 @@
             <option value="usa">ใบ</option>
             <option value="australia">หลอด</option>
           </select>
+        </div>
+        <div class="w3-quarter">
+          <p><label><i class="fa fa-calendar-check-o"></i> หมายเหตุ</label></p>
+          <input class="w3-input w3-border" style="width:480px;" type="text" placeholder="หมายเหตุ" required name="หมายเหตุ">
+        </div>
       </div>
-    </div>
-    <div class="w3-container">
-        <p><label><i class="fa fa-calendar-check-o"></i>ชื่อผู้เพิ่มสินค้า</label></p>
-        <select id="country" name="ชื่อผู้เพิ่ม">
-          <option value="australia">chayanit</option>
-          <option value="canada">Natsuda</option>
-          <option value="usa">apple</option>
-        </select>
-      </div>
-      <div class="w3-container">
-        <p><label><i class="fa fa-calendar-check-o"></i> หมายเหตุ</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="หมายเหตุ" required name="หมายเหตุ">
-      </div>
-      <div class="w3-section w3-right">
-        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"class="w3-button w3-black" type="submit"><i class="fa fa-paper-plane"></i> บันทึก</button>
-          <div id="id01" class="modal">
-            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-              <form class="modal-content" action="/action_page.php">
-                <div class="container">
-                  <h1 style="text-align: center;">ยืนการบันทึก</h1>
-                  <div class="clearfix">
-                    <button type="submit" class="signupbtn">บันทึก</button>
-                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                  </div>
-                </div>
-              </form>
+      <div class="w3-row-padding">
+        <div class="w3-section w3-right">
+          <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="w3-button w3-black" type="submit"><i class="fa fa-plus"></i> เพิ่ม</button>
+        </div>
+      </div>     
+      <!-- ส่วนที่เพิ่มหลายรายการในการเพิ่มสินค้า -->
+      <table class="sortable">
+        <tr>
+          <th>ลำดับ</th>
+          <th>รหัสสินค้า</th>
+          <th>ชื่อสินค้า</th>
+          <th>วันที่ผลิต</th>
+          <th>วันที่หมดอายุ</th>
+          <th>วันที่เพิ่มสินค้า</th> 
+          <th>จำนวน</th>
+          <th>หน่วย</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>001</td>
+        <td>บะหมี่กึ่งสำเร็จรูป</td>
+        <td>03-01-2559</td>
+        <td>12-02-2566</td>
+        <td>04-12-2561</td>
+        <td>20</td>
+        <td>ซอง</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>002</td>
+        <td>ปลากระป๋อง</td>
+        <td>13-11-2554</td>
+        <td>19-08-2565</td>
+        <td>04-12-2561</td>
+        <td>14</td>
+        <td>กระป๋อง</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>003</td>
+        <td>ปลาราดพริก</td>
+        <td>27-10-2554</td>
+        <td>24-07-2566</td>
+        <td>04-12-2561</td>
+        <td>20</td>
+        <td>กระป๋อง</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>004</td>
+        <td>ผักกาดดอง</td>
+        <td>23-09-2555</td>
+        <td>19-02-2564</td>
+        <td>04-12-2561</td>
+        <td>6</td>
+        <td>ซอง</td>
+      </tr>
+    </table>
+  <!-- ปุ่ม ยืนยัน และยกเลิก -->
+  <div class="w3-section w3-right">
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="w3-button w3-black"
+      type="submit"><i class="fa fa-paper-plane"></i> บันทึก</button>
+    <div id="id01" class="modal">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <form class="modal-content" action="/action_page.php">
+        <div class="container">
+          <h1 style="text-align: center;">ยืนการบันทึก</h1>
+          <div class="clearfix">
+            <button type="submit" class="signupbtn">บันทึก</button>
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
           </div>
-        <button class="w3-button w3-black" type="cancle"><i class="fa fa-paper-plane"></i> ยกเลิก</button>
-      </div>
+        </div>
+      </form>
     </div>
+    <button class="w3-button w3-black" type="cancle"><i class="fa fa-paper-plane"></i> ยกเลิก</button>
+  </div>
+  </div>
   </form>
-</div>
+  </div>
 
-<script src="javascript/javascriptaccordion.js"></script>
-<script src="javascript/java.js"></script>
+  <script src="javascript/javascriptaccordion.js"></script>
+  <script src="javascript/java.js"></script>
 
 </body>
+
 </html>

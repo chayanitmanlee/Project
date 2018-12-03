@@ -18,18 +18,15 @@
     <div class="w3-bar-block w3-display-middle">
       <hr style="width:200px;border:5px solid black" class="w3-round">
       <a href="home.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">หน้าแรก</a>
-      <button class="accordion" style="margin-left:10px;">รายการสินค้า</button>
-      <div class="panel">
-        <a href="ข้อมูลสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"> -
-          รายการสินค้าทั้งหมด</a>
-        <a href="รายการเพิ่มสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"> -
-          รายการเพิ่มสินค้าทั้งหมด</a>
-        <a href="รายการเบิกสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"> -
-          รายการเบิกสินค้าทั้งหมด</a>
-      </div>
       <a href="เพิ่มสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">เพิ่มสินค้า</a>
       <a href="เบิกสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">เบิกสินค้า</a>
-      <a href="รายงาน.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">รายงาน</a>
+      <button class="accordion" style="margin-left:10px;">รายงานสินค้า</button>
+      <div class="panel">
+        <a href="ข้อมูลสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"> - รายงานสินค้า</a>
+        <a href="รายการเพิ่มสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"> - รายงานเพิ่มสินค้า</a>
+        <a href="รายการเบิกสินค้า.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"> - รายงานเบิกสินค้า</a>
+      </div>
+      <a href="loginnew.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">ออกจากระบบ</a>
     </div>
   </nav>
 
@@ -46,96 +43,98 @@
     <h1><i class='fa fa-plus'></i> รายการเพิ่มสินค้า</h1>
     <form action="/action_page.php" target="_blank">
       <div class="w3-row-padding">
-        <div class="w3-half ">
+        <div class="w3-quarter">
+          <p><label><i class="fa fa-calendar-check-o"></i> เลขที่เพิ่มสินค้า : 000xx</label></p>
+        </div>
+        <div class="w3-quarter">
+          <p><label><i class="fa fa-calendar-check-o"></i> วันที่เพิ่มสินค้า : 04/12/61</label></p>
+        </div>
+      </div>
+      <div class="w3-row-padding">
+        <div class="w3-half">
           <p><label><i class="fa fa-calendar-check-o"></i> ชื่อ</label></p>
           <select id="country" name="หน่วย">
             <option value="australia">ปลากระป๋อง</option>
-            <option value="australia">ข้าวสาร</option>
+            <option value="australia">ข้าวหอมมะลิกระป๋อง</option>
             <option value="canada">น้ำพริก</option>
             <option value="usa">เทียนไข</option>
             <option value="australia">ผักกาดกอง</option>
             <option value="canada">เกลือ</option>
             <option value="usa">น้ำดื่ม</option>
           </select>
-          <i><a href="" button class="btn" style="text-decoration:none;"> <i class="fa fa-search "></i> ค้นหา</button>
-          </i></a>
-        </div><br><br>
-        <table class="sortable">
-          <tr>
-            <th>เลือก</th>
-            <th>ลำดับ</th>
-            <th>รหัสสินค้า</th>
-            <th>ชื่อสินค้า</th>
-            <th>จำนวน</th>
-            <th>หน่วย</th>
-            <th>วันที่หมดอายุ</th>
-            <th>วันที่เพิ่มสินค้า</th>
-            <th>วันที่หมดอายุ</th>
-            <th>จำนวนคงเหลือ</th>
-          </tr>
-          <tr>
-            <td>
-              <input type="checkbox" name="myTextEditBox" value="checked" />
-            </td>
-            <td>1</td>
-            <td>001</td>
-            <td>มาม่า</td>
-            <td>3</td>
-            <td>ห่อ</td>
-            <td>12-02-2561</td>
-            <td>12-02-2561</td>
-            <td>12-02-2561</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>
-              <input type="checkbox" name="myTextEditBox" value="checked" />
-            </td>
-            <td>1</td>
-            <td>001</td>
-            <td>มาม่า</td>
-            <td>3</td>
-            <td>ห่อ</td>
-            <td>12-02-2561</td>
-            <td>12-02-2561</td>
-            <td>12-02-2561</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>
-              <input type="checkbox" name="myTextEditBox" value="checked" />
-            </td>
-            <td>1</td>
-            <td>001</td>
-            <td>มาม่า</td>
-            <td>3</td>
-            <td>ห่อ</td>
-            <td>12-02-2561</td>
-            <td>12-02-2561</td>
-            <td>12-02-2561</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>
-              <input type="checkbox" name="myTextEditBox" value="checked" />
-            </td>
-            <td>1</td>
-            <td>001</td>
-            <td>มาม่า</td>
-            <td>3</td>
-            <td>ห่อ</td>
-            <td>12-02-2561</td>
-            <td>12-02-2561</td>
-            <td>12-02-2561</td>
-            <td>1</td>
-          </tr>
-        </table>
-      </div>
+          <i><a href="" button class="btn" style="text-decoration:none;"> <i class="fa fa-search "></i> ค้นหา</button></i></a>
+        </div>
+      </div><br>
+      <table class="sortable">
+        <tr>
+          <th>เลือก</th>
+          <th>ลำดับ</th>
+          <th>รหัสสินค้า</th>
+          <th>ชื่อสินค้า</th>
+          <th>จำนวน</th>
+          <th>หน่วย</th>
+          <th>วันที่เพิ่มสินค้า</th>
+          <th>วันที่ผลิต</th>
+          <th>วันที่หมดอายุ</th>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="myTextEditBox" value="checked" />
+          </td>
+          <td>1</td>
+          <td>002</td>
+          <td>ปลากระป๋อง</td>
+          <td>20</td>
+          <td>กระป๋อง</td>
+          <td>04-12-2561</td>
+          <td>12-03-2559</td>
+          <td>22-06-2562</td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="myTextEditBox" value="checked" />
+          </td>
+          <td>2</td>
+          <td>002</td>
+          <td>ปลากระป๋อง</td>
+          <td>20</td>
+          <td>กระป๋อง</td>
+          <td>04-12-2561</td>
+          <td>13-12-2558</td>
+          <td>22-09-2564</td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="myTextEditBox" value="checked" />
+          </td>
+          <td>3</td>
+          <td>002</td>
+          <td>ปลากระป๋อง</td>
+          <td>20</td>
+          <td>กระป๋อง</td>
+          <td>04-12-2561</td>
+          <td>09-04-2559</td>
+          <td>29-06-2565</td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="myTextEditBox" value="checked" />
+          </td>
+          <td>4</td>
+          <td>002</td>
+          <td>ปลากระป๋อง</td>
+          <td>20</td>
+          <td>กระป๋อง</td>
+          <td>04-12-2561</td>
+          <td>18-02-2560</td>
+          <td>25-03-2562</td>
+        </tr>
+      </table>
     </form>
     <form action="/action_page.php" target="_blank">
       <div class="w3-row-padding">
         <div class="w3-section w3-right">
-          <button class="w3-button w3-black" type="submit"><i class="fa fa-check"></i> บันทึก</button>
+          <button class="w3-button w3-black" type="submit"><i class="fa fa-check"></i> เลือก</button>
         </div><br>
         <h1><i class='fa fa-minus'></i> เบิกสินค้า</h1>
         <table>
@@ -145,87 +144,86 @@
             <th>ชื่อสินค้า</th>
             <th>จำนวน</th>
             <th>หน่วย</th>
-            <th>วันที่หมดอายุ</th>
             <th>วันที่เพิ่มสินค้า</th>
+            <th>วันที่ผลิต</th>
             <th>วันที่หมดอายุ</th>
-            <th>จำนวนคงเหลือ</th>
             <th>จำนวน</th>
           </tr>
           <tr>
             <td>1</td>
-            <td>001</td>
-            <td>มาม่า</td>
-            <td>3</td>
-            <td>ห่อ</td>
-            <td>12-02-2561</td>
-            <td>12-02-2561</td>
-            <td>12-02-2561</td>
-            <td>1</td>
+            <td>002</td>
+            <td>ปลากระป๋อง</td>
+            <td>20</td>
+            <td>กระป๋อง</td>
+            <td>04-12-2561</td>
+            <td>13-12-2558</td>
+            <td>22-09-2564</td>
             <td>
               <input class="w3-input w3-border" style="width:40px;height:25px;margin-left:10px;" type="text">
             </td>
           </tr>
           <tr>
-            <td>1</td>
-            <td>001</td>
-            <td>มาม่า</td>
-            <td>3</td>
-            <td>ห่อ</td>
-            <td>12-02-2561</td>
-            <td>12-02-2561</td>
-            <td>12-02-2561</td>
-            <td>1</td>
+            <td>2</td>
+            <td>002</td>
+            <td>ปลากระป๋อง</td>
+            <td>5</td>
+            <td>กระป๋อง</td>
+            <td>04-12-2561</td>
+            <td>23-11-2559</td>
+            <td>14-07-2563</td>
             <td>
               <input class="w3-input w3-border" style="width:40px;height:25px;margin-left:10px;" type="text">
             </td>
           </tr>
-          <tr>
-            <td>1</td>
-            <td>001</td>
-            <td>มาม่า</td>
-            <td>3</td>
-            <td>ห่อ</td>
-            <td>12-02-2561</td>
-            <td>12-02-2561</td>
-            <td>12-02-2561</td>
-            <td>1</td>
-            <td>
-              <input class="w3-input w3-border" style="width:40px;height:25px;margin-left:10px;" type="text">
-            </td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>001</td>
-            <td>มาม่า</td>
-            <td>3</td>
-            <td>ห่อ</td>
-            <td>12-02-2561</td>
-            <td>12-02-2561</td>
-            <td>12-02-2561</td>
-            <td>1</td>
-            <td>
-              <input class="w3-input w3-border" style="width:40px;height:25px;margin-left:10px;" type="text">
-            </td>
-          </tr>
-        </table><br>
+        </table>
         <div class="input-container w3-right">
           <input class="input-field" type="text" placeholder="รวม" name="usrnm">
-        </div>
-        <div class="w3-row-padding">
-          <div class="w3-half">
-            <p><label><i class="fa fa-calendar-check-o"></i> วันที่เบิกสินค้า</label></p>
-            <input class="w3-input w3-border" type="date" placeholder="DD MM YYYY" name="CheckIn" required>
-          </div>
-          <div class="w3-half">
-            <p><label><i class="fa fa-calendar-check-o"></i>ชื่อผู้เบิกสินค้า</label></p>
-            <select id="select" name="ชื่อผู้เพิ่ม">
-              <option value="australia">chayanit</option>
-              <option value="canada">Natsuda</option>
-              <option value="usa">apple</option>
-            </select>
-          </div>
-        </div>
-        <div class="w3-section w3-right">
+        </div><br>
+        <table>
+          <tr>
+            <th>ลำดับ</th>
+            <th>รหัสสินค้า</th>
+            <th>ชื่อสินค้า</th>
+            <th>จำนวน</th>
+            <th>หน่วย</th>
+            <th>วันที่เพิ่มสินค้า</th>
+            <th>วันที่ผลิต</th>
+            <th>วันที่หมดอายุ</th>
+            <th>จำนวน</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>005</td>
+            <td>ข้าวหอมมะลิกระป๋อง</td>
+            <td>34</td>
+            <td>กระป๋อง</td>
+            <td>04-12-2561</td>
+            <td>09-09-2560</td>
+            <td>17-06-2562</td>
+            <td>
+              <input class="w3-input w3-border" style="width:40px;height:25px;margin-left:10px;" type="text">
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>005</td>
+            <td>ข้าวหอมมะลิกระป๋อง</td>
+            <td>10</td>
+            <td>กระป๋อง</td>
+            <td>04-12-2561</td>
+            <td>22-02-2558</td>
+            <td>27-03-2563</td>
+            <td>
+              <input class="w3-input w3-border" style="width:40px;height:25px;margin-left:10px;" type="text">
+            </td>
+          </tr>
+        </table>
+        <div class="input-container w3-right">
+          <input class="input-field" type="text" placeholder="รวม" name="usrnm">
+        </div><br>
+      </div>
+      <!-- ปุ่ม ยืนยัน และยกเลิก -->
+      <div class="w3-section w3-right">
           <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="w3-button w3-black"
             type="submit"><i class="fa fa-paper-plane"></i> บันทึก</button>
           <div id="id01" class="modal">
@@ -243,9 +241,9 @@
           <button class="w3-button w3-black" type="cancle"><i class="fa fa-paper-plane"></i> ยกเลิก</button>
         </div>
       </div>
-    </form>
-  </div>
-
+    </div>
+  </form>
+</div>
   <script src="javascript/javascriptaccordion.js"></script>
   <script src="javascript/sort.js"></script>
 </body>
